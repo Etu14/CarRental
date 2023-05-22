@@ -22,7 +22,7 @@ namespace CarRentalSystem
         {
             this.Hide();
             main_page win2 = new main_page();
-            win2.Show();
+            win2.Show(); ;
         }
 
         private void Form1_Load(object sender, EventArgs e)
