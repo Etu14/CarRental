@@ -51,3 +51,17 @@ C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalS
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.csproj.CopyComplete
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.exe
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.pdb
+C:\Users\admin\source\repos\CarRental\bin\Debug\CarRentalSystem.exe.config
+C:\Users\admin\source\repos\CarRental\bin\Debug\CarRentalSystem.exe
+C:\Users\admin\source\repos\CarRental\bin\Debug\CarRentalSystem.pdb
+C:\Users\admin\source\repos\CarRental\bin\Debug\Guna.UI2.dll
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.Form1.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.main_page.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.Properties.Resources.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.CopyComplete
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.exe
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.pdb
