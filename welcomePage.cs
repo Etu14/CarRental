@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CarRentalSystem
 {
-    public partial class Form1 : Form
+    public partial class welcomePage : Form
     {
-        public Form1()
+        public welcomePage()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace CarRentalSystem
         {
             this.Hide();
             main_page win2 = new main_page();
-            win2.Show();   .
+            win2.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)

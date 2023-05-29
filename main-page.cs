@@ -45,9 +45,15 @@ namespace CarRentalSystem
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+
         }
 
         private void guna2HScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox8_Click(object sender, EventArgs e)
         {
 
         }

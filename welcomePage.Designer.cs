@@ -1,7 +1,7 @@
 ﻿
 namespace CarRentalSystem
 {
-    partial class Form1
+    partial class welcomePage
     {
         /// <summary>
         /// Required designer variable.
@@ -56,7 +56,7 @@ namespace CarRentalSystem
             this.LetsGo.Text = "Let´s Go";
             this.LetsGo.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // Form1
+            // welcomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -66,7 +66,7 @@ namespace CarRentalSystem
             this.Controls.Add(this.LetsGo);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "welcomePage";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
