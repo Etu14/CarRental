@@ -57,5 +57,12 @@ namespace CarRentalSystem
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginPage win2 = new loginPage();
+            win2.Show();
+        }
     }
 }

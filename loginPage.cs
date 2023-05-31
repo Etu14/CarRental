@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,10 +14,6 @@ namespace CarRentalSystem
 {
     public partial class loginPage : Form
     {
-        MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
-        MySqlCommand command;
-        MySqlDataReader mdr;
-
         public loginPage()
         {
             InitializeComponent();
@@ -49,42 +46,44 @@ namespace CarRentalSystem
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
-            {
-                MessageBox.Show("Please input Username and Password", "Error");
-            }
+            // Connection string for connecting to the database on localhost
+            string connectionString = "Data Source=localhost;Initial Catalog=users;";
 
-            else
+            try
             {
-                connection.Open();
-                string selectQuery = "SELECT * FROM loginform.userinfo WHERE Username = '" + txtUsername.Text + "' AND Password = '" + txtPassword.Text + "';";
-                command = new MySqlCommand(selectQuery, connection);
-                mdr = command.ExecuteReader();
-                if (mdr.Read())
+                // Create a new SqlConnection object with the connection string
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string MyConnection2 = "datasource=localhost;port=3306;username=root;password=";
-                    string Query = "update loginform.userinfo set LastLogin='Username='" + this.txtUsername.Text + "';";
-                    MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
+                    // Open the database connection
+                    connection.Open();
+                    Console.WriteLine("Connection to the database established.");
 
-                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                    MySqlDataReader MyReader2;
-                    MyConn2.Open();
-                    MyReader2 = MyCommand2.ExecuteReader();
-                    while (MyReader2.Read())
+                    // Execute a simple query
+                    string query = "SELECT * FROM users";
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
+                        // Execute the query and retrieve the results
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Process the retrieved data
+                            while (reader.Read())
+                            {
+                                // Assuming you have a 'Name' column in your table
+                                string name = reader.GetString(reader.GetOrdinal("username"));
+                                Console.WriteLine("Username: " + name);
+                            }
+                        }
                     }
-                    MyConn2.Close();
-
+                   
 
                 }
-                else
-                {
-
-                    MessageBox.Show("Incorrect Login Information! Try again.");
-                }
-
-                connection.Close();
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+            Console.ReadLine();
         }
     }
 }
