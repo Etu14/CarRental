@@ -172,5 +172,32 @@
   <ItemGroup>
     <None Include="Resources\loginIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Alfa-Romeo-Logo.png" />
+    <None Include="Resources\SKODA-FELICIA-1 1.png" />
+    <None Include="Resources\Honda-logo.png" />
+    <None Include="Resources\Fiat_Automobiles-Logo.wine.png" />
+    <None Include="Resources\bmw-brand-logo-0.png" />
+    <None Include="Resources\audi-logo-22.png" />
+    <None Include="Resources\Volkswagen-emblem-2014-1920x10802.png" />
+    <None Include="Resources\Alfa-Romeo-Logo2.png" />
+    <None Include="Resources\toyota-logos-brands-logotypes-0.png" />
+    <None Include="Resources\Skoda-logo-2016-1920x1080.png" />
+    <None Include="Resources\bmw-logo-png-transparent.png" />
+    <None Include="Resources\Rolls-Royce-logo-2048x2048.png" />
+    <None Include="Resources\fiat-3-logo-png-transparent.png" />
+    <None Include="Resources\Kia-logo.png" />
+    <None Include="Resources\audi-logo-21.png" />
+    <None Include="Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle1.png" />
+    <None Include="Resources\Volkswagen-emblem-2014-1920x10801.png" />
+    <None Include="Resources\Alfa-Romeo-Logo1.png" />
+    <Content Include="Resources\audi-logo-2.png" />
+    <Content Include="Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle.png" />
+    <Content Include="Resources\png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark.png" />
+    <None Include="Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass1.png" />
+    <None Include="Resources\png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark1.png" />
+    <Content Include="Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass.png" />
+    <Content Include="Resources\Volkswagen-emblem-2014-1920x1080.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

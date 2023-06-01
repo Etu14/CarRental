@@ -32,26 +32,35 @@
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -129,94 +138,224 @@
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // guna2PictureBox7
+            // label1
             // 
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(968, 191);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox7.TabIndex = 11;
-            this.guna2PictureBox7.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(16, 164);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 35);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Top brands";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // guna2PictureBox8
+            // guna2Panel2
             // 
-            this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(852, 191);
-            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox8.TabIndex = 10;
-            this.guna2PictureBox8.TabStop = false;
-            this.guna2PictureBox8.Click += new System.EventHandler(this.guna2PictureBox8_Click);
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Location = new System.Drawing.Point(22, 638);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(350, 31);
+            this.guna2Panel2.TabIndex = 14;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Panel3.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel3.BorderThickness = 1;
+            this.guna2Panel3.Location = new System.Drawing.Point(440, 638);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(350, 31);
+            this.guna2Panel3.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(17, 396);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 35);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Top for you";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // guna2PictureBox12
+            // 
+            this.guna2PictureBox12.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox12.BackgroundImage = global::CarRentalSystem.Properties.Resources.Honda_logo;
+            this.guna2PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox12.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
+            this.guna2PictureBox12.ImageRotate = 0F;
+            this.guna2PictureBox12.Location = new System.Drawing.Point(941, 220);
+            this.guna2PictureBox12.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.guna2PictureBox12.Name = "guna2PictureBox12";
+            this.guna2PictureBox12.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox12.TabIndex = 26;
+            this.guna2PictureBox12.TabStop = false;
             // 
             // guna2PictureBox9
             // 
+            this.guna2PictureBox9.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox9.BackgroundImage = global::CarRentalSystem.Properties.Resources.Rolls_Royce_logo_2048x2048;
+            this.guna2PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox9.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(733, 191);
+            this.guna2PictureBox9.Location = new System.Drawing.Point(839, 220);
             this.guna2PictureBox9.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox9.TabIndex = 9;
+            this.guna2PictureBox9.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox9.TabIndex = 25;
             this.guna2PictureBox9.TabStop = false;
             // 
-            // guna2PictureBox4
+            // guna2PictureBox8
             // 
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(619, 191);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox4.TabIndex = 8;
-            this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox8.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox8.BackgroundImage = global::CarRentalSystem.Properties.Resources.Kia_logo;
+            this.guna2PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox8.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
+            this.guna2PictureBox8.ImageRotate = 0F;
+            this.guna2PictureBox8.Location = new System.Drawing.Point(737, 220);
+            this.guna2PictureBox8.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox8.TabIndex = 24;
+            this.guna2PictureBox8.TabStop = false;
             // 
-            // guna2PictureBox5
+            // guna2PictureBox7
             // 
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(503, 191);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox5.TabIndex = 7;
-            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox7.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox7.BackgroundImage = global::CarRentalSystem.Properties.Resources.Fiat_Automobiles_Logo_wine;
+            this.guna2PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox7.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(635, 220);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox7.TabIndex = 23;
+            this.guna2PictureBox7.TabStop = false;
             // 
             // guna2PictureBox6
             // 
+            this.guna2PictureBox6.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox6.BackgroundImage = global::CarRentalSystem.Properties.Resources.toyota_logos_brands_logotypes_0;
+            this.guna2PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox6.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(384, 191);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(533, 220);
             this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox6.TabIndex = 6;
+            this.guna2PictureBox6.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox6.TabIndex = 22;
             this.guna2PictureBox6.TabStop = false;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox5.BackgroundImage = global::CarRentalSystem.Properties.Resources.Volkswagen_emblem_2014_1920x1080;
+            this.guna2PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox5.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(431, 220);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox5.TabIndex = 21;
+            this.guna2PictureBox5.TabStop = false;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox4.BackgroundImage = global::CarRentalSystem.Properties.Resources.Skoda_logo_2016_1920x1080;
+            this.guna2PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox4.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(329, 220);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox4.TabIndex = 20;
+            this.guna2PictureBox4.TabStop = false;
             // 
             // guna2PictureBox3
             // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox3.BackgroundImage = global::CarRentalSystem.Properties.Resources.bmw_brand_logo_0;
+            this.guna2PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox3.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(269, 191);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(228, 220);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox3.TabIndex = 5;
+            this.guna2PictureBox3.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox3.TabIndex = 19;
             this.guna2PictureBox3.TabStop = false;
             // 
             // guna2PictureBox2
             // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox2.BackgroundImage = global::CarRentalSystem.Properties.Resources.audi_logo_2;
+            this.guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox2.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(153, 191);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(125, 220);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(67, 64);
-            this.guna2PictureBox2.TabIndex = 4;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(89, 89);
+            this.guna2PictureBox2.TabIndex = 18;
             this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox11
+            // 
+            this.guna2PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox11.ImageRotate = 0F;
+            this.guna2PictureBox11.Location = new System.Drawing.Point(440, 453);
+            this.guna2PictureBox11.Name = "guna2PictureBox11";
+            this.guna2PictureBox11.Size = new System.Drawing.Size(350, 188);
+            this.guna2PictureBox11.TabIndex = 15;
+            this.guna2PictureBox11.TabStop = false;
+            // 
+            // guna2PictureBox10
+            // 
+            this.guna2PictureBox10.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox10.BackgroundImage = global::CarRentalSystem.Properties.Resources.SKODA_FELICIA_1_1;
+            this.guna2PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox10.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox10.ImageRotate = 0F;
+            this.guna2PictureBox10.Location = new System.Drawing.Point(22, 453);
+            this.guna2PictureBox10.Name = "guna2PictureBox10";
+            this.guna2PictureBox10.Size = new System.Drawing.Size(350, 188);
+            this.guna2PictureBox10.TabIndex = 13;
+            this.guna2PictureBox10.TabStop = false;
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox1.BackgroundImage = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox1.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(33, 190);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(23, 220);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(67, 64);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(89, 89);
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -234,36 +373,27 @@
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
             this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(429, 400);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(266, 99);
-            this.guna2Button1.TabIndex = 12;
-            this.guna2Button1.Text = "LoginTestButton";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
             // main_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1065, 712);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2PictureBox7);
-            this.Controls.Add(this.guna2PictureBox8);
+            this.Controls.Add(this.guna2PictureBox12);
             this.Controls.Add(this.guna2PictureBox9);
-            this.Controls.Add(this.guna2PictureBox4);
-            this.Controls.Add(this.guna2PictureBox5);
+            this.Controls.Add(this.guna2PictureBox8);
+            this.Controls.Add(this.guna2PictureBox7);
             this.Controls.Add(this.guna2PictureBox6);
+            this.Controls.Add(this.guna2PictureBox5);
+            this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.guna2PictureBox11);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.guna2PictureBox10);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Panel1);
@@ -275,17 +405,21 @@
             this.Load += new System.EventHandler(this.main_page_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -296,14 +430,20 @@
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox12;
     }
 }
