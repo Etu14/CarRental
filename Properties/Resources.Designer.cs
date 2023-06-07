@@ -73,6 +73,16 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap airIcon {
+            get {
+                object obj = ResourceManager.GetObject("airIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Alfa_Romeo_Logo {
             get {
                 object obj = ResourceManager.GetObject("Alfa-Romeo-Logo", resourceCulture);
@@ -126,6 +136,36 @@ namespace CarRentalSystem.Properties {
         internal static System.Drawing.Bitmap bmw_logo_png_transparent {
             get {
                 object obj = ResourceManager.GetObject("bmw-logo-png-transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carIcon {
+            get {
+                object obj = ResourceManager.GetObject("carIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap closeIcon {
+            get {
+                object obj = ResourceManager.GetObject("closeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap doorIcon {
+            get {
+                object obj = ResourceManager.GetObject("doorIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +243,26 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap passengerIcon {
+            get {
+                object obj = ResourceManager.GetObject("passengerIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phoneIcon {
+            get {
+                object obj = ResourceManager.GetObject("phoneIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_transparent_logo_bmw_car_bmw_m5_motorcycle_bmw_motorrad_symbol_emblem_circle {
             get {
                 object obj = ResourceManager.GetObject("png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle", resourceCulture);
@@ -234,9 +294,39 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profilePicture {
+            get {
+                object obj = ResourceManager.GetObject("profilePicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rolls_Royce_logo_2048x2048 {
             get {
                 object obj = ResourceManager.GetObject("Rolls-Royce-logo-2048x2048", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap searchIcon {
+            get {
+                object obj = ResourceManager.GetObject("searchIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shiftIcon {
+            get {
+                object obj = ResourceManager.GetObject("shiftIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -257,6 +347,16 @@ namespace CarRentalSystem.Properties {
         internal static System.Drawing.Bitmap Skoda_logo_2016_1920x1080 {
             get {
                 object obj = ResourceManager.GetObject("Skoda-logo-2016-1920x1080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starIcon {
+            get {
+                object obj = ResourceManager.GetObject("starIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

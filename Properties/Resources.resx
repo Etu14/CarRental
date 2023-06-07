@@ -118,41 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="loginBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volkswagen-emblem-2014-1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Volkswagen-emblem-2014-1920x10801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fiat-3-logo-png-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fiat-3-logo-png-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bmw-brand-logo-0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bmw-brand-logo-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mainBg 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\source\images\mainBg 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bmw-logo-png-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bmw-logo-png-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="audi-logo-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\audi-logo-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loginIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fiat_Automobiles-Logo.wine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fiat_Automobiles-Logo.wine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Kia-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kia-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alfa-Romeo-Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alfa-Romeo-Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toyota-logos-brands-logotypes-0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toyota-logos-brands-logotypes-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,31 +127,94 @@
   <data name="Rolls-Royce-logo-2048x2048" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rolls-Royce-logo-2048x2048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Skoda-logo-2016-1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Skoda-logo-2016-1920x1080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="audi-logo-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audi-logo-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Alfa-Romeo-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alfa-Romeo-Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fiat-3-logo-png-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiat-3-logo-png-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SKODA-FELICIA-1 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SKODA-FELICIA-1 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="audi-logo-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audi-logo-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Volkswagen-emblem-2014-1920x10801" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Volkswagen-emblem-2014-1920x10802.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="searchIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searchIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mainBg 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\source\images\mainBg 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Honda-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Honda-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profilePicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profilePicture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bmw-logo-png-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bmw-logo-png-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alfa-Romeo-Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alfa-Romeo-Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bmw-brand-logo-0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bmw-brand-logo-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fiat_Automobiles-Logo.wine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fiat_Automobiles-Logo.wine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="audi-logo-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\audi-logo-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Skoda-logo-2016-1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Skoda-logo-2016-1920x1080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SKODA-FELICIA-1 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SKODA-FELICIA-1 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen-emblem-2014-1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen-emblem-2014-1920x10801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen-emblem-2014-1920x10801" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen-emblem-2014-1920x10802.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2560x1440" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2560x1440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alfa-Romeo-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alfa-Romeo-Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Honda-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Honda-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doorIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shiftIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shiftIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\airIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="passengerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passengerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phoneIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phoneIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -65,7 +65,7 @@ namespace CarRentalSystem
             this.ClientSize = new System.Drawing.Size(1065, 712);
             this.Controls.Add(this.LetsGo);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "welcomePage";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
