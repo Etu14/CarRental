@@ -37,7 +37,9 @@ namespace CarRentalSystem
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            registerPage win2 = new registerPage();
+            win2.Show();
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -97,7 +99,9 @@ namespace CarRentalSystem
 
                         if (sdr["user_password"].Equals(guna2TextBox2.Text))
                         {
-                            MessageBox.Show("Si prihlaseny", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            this.Hide();
+                            successLogin win2 = new successLogin();
+                            win2.Show();
                         }
                         else
                         {

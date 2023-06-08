@@ -78,6 +78,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Already registered";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // guna2TextBox3
             // 

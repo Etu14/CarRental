@@ -29,7 +29,9 @@ namespace CarRentalSystem
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            loginPage win2 = new loginPage();
+            win2.Show();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)

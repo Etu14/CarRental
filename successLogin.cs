@@ -28,5 +28,10 @@ namespace CarRentalSystem
             loginPage win2 = new loginPage();
             win2.Show();
         }
+
+        private void successLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -21,5 +21,12 @@ namespace CarRentalSystem
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            loginPage win2 = new loginPage();
+            win2.Show();
+        }
     }
 }
