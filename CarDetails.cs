@@ -46,5 +46,10 @@ namespace CarRentalSystem
         {
 
         }
+
+        private void CarDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

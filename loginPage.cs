@@ -50,12 +50,35 @@ namespace CarRentalSystem
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
+            Color deafault_c = Color.FromArgb(64, 64, 64);
+            Color wrong_c = Color.FromArgb(253, 87, 87);
+
+
+            guna2TextBox1.BorderColor = deafault_c;
+            guna2TextBox2.BorderColor = deafault_c;
+            guna2TextBox1.PlaceholderForeColor = deafault_c;
+            guna2TextBox2.PlaceholderForeColor = deafault_c;
+            guna2TextBox1.PlaceholderText = "Username";
+            guna2TextBox2.PlaceholderText = "Password";
+            guna2TextBox1.HoverState.BorderColor = deafault_c;
+            guna2TextBox2.HoverState.BorderColor = deafault_c;
+            guna2TextBox1.HoverState.ForeColor = deafault_c;
+            guna2TextBox2.HoverState.ForeColor = deafault_c;
+
             try
             {
-                if(guna2TextBox1.Text == "" && guna2TextBox2.Text == "")
+                if (guna2TextBox1.Text == "" && guna2TextBox2.Text == "")
                 {
-                    guna2TextBox1.PlaceholderText = "wrong name";
-                    guna2TextBox2.PlaceholderText = "wrong password";
+                    guna2TextBox1.BorderColor = wrong_c;
+                    guna2TextBox2.BorderColor = wrong_c;
+                    guna2TextBox1.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.PlaceholderForeColor = wrong_c;
+                    guna2TextBox1.PlaceholderText = "Enter your username!";
+                    guna2TextBox2.PlaceholderText = "Enter your password!";
+                    guna2TextBox1.HoverState.BorderColor = wrong_c;
+                    guna2TextBox2.HoverState.BorderColor = wrong_c;
+                    guna2TextBox1.HoverState.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.HoverState.PlaceholderForeColor = wrong_c;
                 }
                 else
                 {
@@ -64,7 +87,7 @@ namespace CarRentalSystem
                         con.Open();
 
                     }
-                    string query = "SELECT name,password FROM car_rental.users WHERE name = '" + guna2TextBox1.Text + "'";
+                    string query = "SELECT user_username, user_password FROM car_rent.user_info WHERE user_username = '" + guna2TextBox1.Text + "'";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     MySqlDataReader sdr = cmd.ExecuteReader();
 
@@ -72,25 +95,39 @@ namespace CarRentalSystem
                     {
                         sdr.Read();
 
-                        if (sdr["password"].Equals(guna2TextBox2.Text))
+                        if (sdr["user_password"].Equals(guna2TextBox2.Text))
                         {
-                            MessageBox.Show("Si registrovany", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Si prihlaseny", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
+                            guna2TextBox2.BorderColor = wrong_c;
+                            guna2TextBox2.PlaceholderForeColor = wrong_c;
                             guna2TextBox2.PlaceholderText = "Incorrect password";
+                            guna2TextBox2.HoverState.BorderColor = wrong_c;
+                            guna2TextBox2.HoverState.PlaceholderForeColor = wrong_c;
                         }
                     }
                     else
                     {
+                        guna2TextBox1.BorderColor = wrong_c;
+                        guna2TextBox1.PlaceholderForeColor = wrong_c;
                         guna2TextBox1.PlaceholderText = "Incorrect username!";
+                        guna2TextBox1.HoverState.BorderColor = wrong_c;
                         guna2TextBox1.Text = string.Empty;
-                        guna2TextBox2.PlaceholderText = "Incorrect password!";
-                        guna2TextBox2.Text = string.Empty;
-                        
+                        guna2TextBox1.HoverState.PlaceholderForeColor = wrong_c;
+                        if (guna2TextBox2.Text == "")
+                        {
+                            guna2TextBox2.BorderColor = wrong_c;
+                            guna2TextBox2.PlaceholderForeColor = wrong_c;
+                            guna2TextBox2.PlaceholderText = "Enter your password!";
+                            guna2TextBox2.HoverState.BorderColor = wrong_c;
+                            guna2TextBox2.HoverState.PlaceholderForeColor = wrong_c;
+                        }
                     }
 
                     con.Close();
+
 
                 }
             }
@@ -98,8 +135,7 @@ namespace CarRentalSystem
             {
 
                 con.Close();
-                MessageBox.Show(" " + ex + " ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                
             }
         }
 

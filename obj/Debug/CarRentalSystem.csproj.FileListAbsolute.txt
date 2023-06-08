@@ -176,3 +176,17 @@ C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\bin\Debug\Newtonsoft
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.csproj.App.config
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Newtonsoft.Json.dll
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\Newtonsoft.Json.xml
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\z21ite24\source\repos\CarRental\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\z21ite24\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.App.config
+C:\Users\z21ite24\source\repos\CarRental\obj\Debug\CarRentalSystem.CarDetails.resources
