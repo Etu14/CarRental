@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -40,6 +41,7 @@
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -94,6 +96,7 @@
             this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Black;
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.linkLabel3.ForeColor = System.Drawing.Color.Black;
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
@@ -101,7 +104,7 @@
             this.linkLabel3.Location = new System.Drawing.Point(272, 13);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(86, 16);
+            this.linkLabel3.Size = new System.Drawing.Size(85, 16);
             this.linkLabel3.TabIndex = 3;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Your account";
@@ -114,6 +117,7 @@
             this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Black;
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.linkLabel2.ForeColor = System.Drawing.Color.Black;
             this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
@@ -121,7 +125,7 @@
             this.linkLabel2.Location = new System.Drawing.Point(169, 13);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(64, 16);
+            this.linkLabel2.Size = new System.Drawing.Size(63, 16);
             this.linkLabel2.TabIndex = 3;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Favourite";
@@ -134,6 +138,7 @@
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Black;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.linkLabel1.ForeColor = System.Drawing.Color.Black;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
@@ -141,7 +146,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(62, 13);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(45, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(44, 16);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Home\r\n";
@@ -298,6 +303,7 @@
             // guna2PictureBox14
             // 
             this.guna2PictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox14.ImageRotate = 0F;
             this.guna2PictureBox14.Location = new System.Drawing.Point(655, 295);
             this.guna2PictureBox14.Name = "guna2PictureBox14";
@@ -311,6 +317,7 @@
             this.guna2PictureBox13.BackgroundImage = global::CarRentalSystem.Properties.Resources.Honda_logo;
             this.guna2PictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox13.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox13.ImageRotate = 0F;
             this.guna2PictureBox13.Location = new System.Drawing.Point(889, 105);
@@ -326,6 +333,7 @@
             this.guna2PictureBox12.BackgroundImage = global::CarRentalSystem.Properties.Resources.Honda_logo;
             this.guna2PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox12.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox12.ImageRotate = 0F;
             this.guna2PictureBox12.Location = new System.Drawing.Point(802, 105);
@@ -341,6 +349,7 @@
             this.guna2PictureBox9.BackgroundImage = global::CarRentalSystem.Properties.Resources.Rolls_Royce_logo_2048x2048;
             this.guna2PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox9.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox9.ImageRotate = 0F;
             this.guna2PictureBox9.Location = new System.Drawing.Point(715, 105);
@@ -356,6 +365,7 @@
             this.guna2PictureBox8.BackgroundImage = global::CarRentalSystem.Properties.Resources.Kia_logo;
             this.guna2PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox8.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox8.ImageRotate = 0F;
             this.guna2PictureBox8.Location = new System.Drawing.Point(628, 105);
@@ -371,6 +381,7 @@
             this.guna2PictureBox7.BackgroundImage = global::CarRentalSystem.Properties.Resources.Fiat_Automobiles_Logo_wine;
             this.guna2PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox7.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox7.ImageRotate = 0F;
             this.guna2PictureBox7.Location = new System.Drawing.Point(541, 105);
@@ -383,6 +394,7 @@
             // guna2PictureBox11
             // 
             this.guna2PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox11.ImageRotate = 0F;
             this.guna2PictureBox11.Location = new System.Drawing.Point(339, 295);
             this.guna2PictureBox11.Name = "guna2PictureBox11";
@@ -396,6 +408,7 @@
             this.guna2PictureBox6.BackgroundImage = global::CarRentalSystem.Properties.Resources.toyota_logos_brands_logotypes_0;
             this.guna2PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox6.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox6.ImageRotate = 0F;
             this.guna2PictureBox6.Location = new System.Drawing.Point(454, 105);
@@ -412,6 +425,7 @@
             this.guna2PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox10.BorderRadius = 20;
             this.guna2PictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox10.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox10.ImageRotate = 0F;
             this.guna2PictureBox10.Location = new System.Drawing.Point(22, 295);
@@ -427,6 +441,7 @@
             this.guna2PictureBox5.BackgroundImage = global::CarRentalSystem.Properties.Resources.Volkswagen_emblem_2014_1920x1080;
             this.guna2PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox5.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox5.ImageRotate = 0F;
             this.guna2PictureBox5.Location = new System.Drawing.Point(367, 105);
@@ -442,6 +457,7 @@
             this.guna2PictureBox4.BackgroundImage = global::CarRentalSystem.Properties.Resources.Skoda_logo_2016_1920x1080;
             this.guna2PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox4.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(280, 105);
@@ -457,6 +473,7 @@
             this.guna2PictureBox1.BackgroundImage = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox1.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(19, 105);
@@ -472,6 +489,7 @@
             this.guna2PictureBox3.BackgroundImage = global::CarRentalSystem.Properties.Resources.bmw_brand_logo_0;
             this.guna2PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox3.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(193, 105);
@@ -487,6 +505,7 @@
             this.guna2PictureBox2.BackgroundImage = global::CarRentalSystem.Properties.Resources.audi_logo_2;
             this.guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox2.Image = global::CarRentalSystem.Properties.Resources.Alfa_Romeo_Logo;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(106, 105);
@@ -579,5 +598,6 @@
         private System.Windows.Forms.LinkLabel linkLabel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

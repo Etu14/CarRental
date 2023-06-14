@@ -190,3 +190,4 @@ C:\Users\z21ite24\source\repos\CarRental\bin\Debug\System.Net.Http.Extensions.xm
 C:\Users\z21ite24\source\repos\CarRental\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\z21ite24\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.App.config
 C:\Users\z21ite24\source\repos\CarRental\obj\Debug\CarRentalSystem.CarDetails.resources
+C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.Date.resources

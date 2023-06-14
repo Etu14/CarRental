@@ -55,5 +55,17 @@ namespace CarRentalSystem
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Date win2 = new Date();
+            win2.Show();
+        }
     }
 }
