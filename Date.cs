@@ -12,11 +12,12 @@ namespace CarRentalSystem
 {
     public partial class Date : Form
     {
+        private DateTime selectedDate1;
+        private DateTime selectedDate3;
         public Date()
         {
             InitializeComponent();
         }
-
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -90,5 +91,13 @@ namespace CarRentalSystem
         {
 
         }
+
+        private void LetsGo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            checkout win2 = new checkout(selectedDate1, selectedDate3);
+            win2.Show();
+        }
     }
 }
+ 
