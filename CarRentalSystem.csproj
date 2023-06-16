@@ -2,6 +2,7 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <LangVersion>preview</LangVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B6745ADA-DE72-4BC0-9C1E-62617CF1F661}</ProjectGuid>
@@ -22,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -221,6 +223,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\airIcon.png" />
+    <None Include="Resources\21-218755_group-of-cars-png-transparent-png.png" />
+    <None Include="Resources\26e3c883e6e14692ac652051d66d3e10.jpg" />
+    <None Include="Resources\7cb7dfc196f8e48cb206b4d59ccb4b19.jpg" />
+    <None Include="Resources\7cb7dfc196f8e48cb206b4d59ccb4b191.jpg" />
     <Content Include="Resources\Alfa-Romeo-Logo.png" />
     <None Include="Resources\SKODA-FELICIA-1 1.png" />
     <None Include="Resources\Honda-logo.png" />
@@ -245,6 +251,9 @@
     <None Include="Resources\carIcon.png" />
     <None Include="Resources\passengerIcon.png" />
     <None Include="Resources\phoneIcon.png" />
+    <None Include="Resources\f1.png" />
+    <None Include="Resources\car.png" />
+    <None Include="Resources\mainBg 1.png" />
     <Content Include="Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle.png" />
     <Content Include="Resources\png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark.png" />
     <None Include="Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass1.png" />
@@ -254,6 +263,7 @@
     <None Include="Resources\profilePicture.png" />
     <None Include="Resources\starIcon.png" />
     <None Include="Resources\shiftIcon.png" />
+    <None Include="Resources\sport-car.png" />
     <Content Include="Resources\Volkswagen-emblem-2014-1920x1080.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
