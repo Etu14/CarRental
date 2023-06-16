@@ -191,9 +191,6 @@ C:\Users\z21ite24\source\repos\CarRental\bin\Debug\System.Net.Http.Primitives.xm
 C:\Users\z21ite24\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.App.config
 C:\Users\z21ite24\source\repos\CarRental\obj\Debug\CarRentalSystem.CarDetails.resources
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.Date.resources
-<<<<<<< HEAD
-C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.checkout.resources
-=======
 C:\Users\admin\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.dll
 C:\Users\admin\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
 C:\Users\admin\source\repos\CarRental\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
@@ -210,4 +207,3 @@ C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.csproj.App.confi
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.CarDetails.resources
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.checkout.resources
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.Date.resources
->>>>>>> c3f07c8e9b9015aa080248fd9367616d61437b01
