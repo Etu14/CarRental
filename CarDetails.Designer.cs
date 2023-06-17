@@ -462,7 +462,7 @@
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(672, 218);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(672, 224);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(86, 27);
             this.guna2HtmlLabel6.TabIndex = 26;

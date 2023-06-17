@@ -203,9 +203,29 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cash_icon {
+            get {
+                object obj = ResourceManager.GetObject("cash-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap closeIcon {
             get {
                 object obj = ResourceManager.GetObject("closeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap date_icon {
+            get {
+                object obj = ResourceManager.GetObject("date-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +286,16 @@ namespace CarRentalSystem.Properties {
         internal static System.Drawing.Bitmap Kia_logo {
             get {
                 object obj = ResourceManager.GetObject("Kia-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap location_icon {
+            get {
+                object obj = ResourceManager.GetObject("location-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -437,6 +467,16 @@ namespace CarRentalSystem.Properties {
         internal static System.Drawing.Bitmap starIcon {
             get {
                 object obj = ResourceManager.GetObject("starIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap time_icon {
+            get {
+                object obj = ResourceManager.GetObject("time-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

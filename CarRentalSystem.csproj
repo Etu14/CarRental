@@ -254,6 +254,9 @@
     <None Include="Resources\f1.png" />
     <None Include="Resources\car.png" />
     <None Include="Resources\mainBg 1.png" />
+    <None Include="Resources\cash-icon.png" />
+    <None Include="Resources\date-icon.png" />
+    <None Include="Resources\location-icon.png" />
     <Content Include="Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle.png" />
     <Content Include="Resources\png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark.png" />
     <None Include="Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass1.png" />
@@ -264,6 +267,7 @@
     <None Include="Resources\starIcon.png" />
     <None Include="Resources\shiftIcon.png" />
     <None Include="Resources\sport-car.png" />
+    <None Include="Resources\time-icon.png" />
     <Content Include="Resources\Volkswagen-emblem-2014-1920x1080.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
