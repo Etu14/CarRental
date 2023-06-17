@@ -27,22 +27,27 @@ namespace CarRentalSystem
         {
 
         }
-
+        public static int parentX,parenY;
         static string constr = ("Data Source=localhost;port=3306;username=root;password=");
         static MySqlConnection con = new MySqlConnection(constr);
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO car_rent.rent_dates (start, end) VALUES (@startDate, @endDate)";
-            MySqlCommand cmd = new MySqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@startDate", selectedDate1);
-            cmd.Parameters.AddWithValue("@endDate", selectedDate3);
+            // string query = "INSERT INTO car_rent.rent_dates (start, end) VALUES (@startDate, @endDate)";
+            // MySqlCommand cmd = new MySqlCommand(query, con);
+            // cmd.Parameters.AddWithValue("@startDate", selectedDate1);
+            // cmd.Parameters.AddWithValue("@endDate", selectedDate3);
 
-            con.Open();
-            cmd.ExecuteNonQuery();
-            MessageBox.Show(" " + selectedDate1 + ", "+selectedDate3+" ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            con.Close();
+            // con.Open();
+            // cmd.ExecuteNonQuery();
+            // MessageBox.Show(" " + selectedDate1 + ", "+selectedDate3+" ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //con.Close();
 
+            ModalSuc modalForm = new ModalSuc();
+            modalForm.StartPosition = FormStartPosition.CenterScreen;
+            
+            modalForm.ShowDialog();
         }
+        
 
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -95,6 +100,16 @@ namespace CarRentalSystem
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
         {
 
         }

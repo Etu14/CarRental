@@ -138,6 +138,12 @@
     <Compile Include="loginPage.Designer.cs">
       <DependentUpon>loginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModalSuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalSuc.Designer.cs">
+      <DependentUpon>ModalSuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="registerPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginPage.resx">
       <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalSuc.resx">
+      <DependentUpon>ModalSuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="registerPage.resx">
       <DependentUpon>registerPage.cs</DependentUpon>

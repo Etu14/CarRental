@@ -208,3 +208,4 @@ C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.CarDetails.resou
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.checkout.resources
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.Date.resources
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.checkout.resources
+C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.ModalSuc.resources

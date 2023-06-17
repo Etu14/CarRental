@@ -278,7 +278,7 @@
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.Items.AddRange(new object[] {
             "Bratislava",
-            " Žilina",
+            "Žilina",
             "Poprad",
             "Trenčín"});
             this.guna2ComboBox1.Location = new System.Drawing.Point(49, 129);
