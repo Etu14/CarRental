@@ -243,6 +243,16 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap error_icon {
+            get {
+                object obj = ResourceManager.GetObject("error-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap f1 {
             get {
                 object obj = ResourceManager.GetObject("f1", resourceCulture);
@@ -467,6 +477,16 @@ namespace CarRentalSystem.Properties {
         internal static System.Drawing.Bitmap starIcon {
             get {
                 object obj = ResourceManager.GetObject("starIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap suc_icon {
+            get {
+                object obj = ResourceManager.GetObject("suc-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

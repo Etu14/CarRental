@@ -138,6 +138,12 @@
     <Compile Include="loginPage.Designer.cs">
       <DependentUpon>loginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="modalError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalError.Designer.cs">
+      <DependentUpon>modalError.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModalSuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginPage.resx">
       <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalError.resx">
+      <DependentUpon>modalError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModalSuc.resx">
       <DependentUpon>ModalSuc.cs</DependentUpon>
@@ -266,6 +275,7 @@
     <None Include="Resources\cash-icon.png" />
     <None Include="Resources\date-icon.png" />
     <None Include="Resources\location-icon.png" />
+    <None Include="Resources\error-icon.png" />
     <Content Include="Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle.png" />
     <Content Include="Resources\png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark.png" />
     <None Include="Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass1.png" />
@@ -277,6 +287,7 @@
     <None Include="Resources\shiftIcon.png" />
     <None Include="Resources\sport-car.png" />
     <None Include="Resources\time-icon.png" />
+    <None Include="Resources\suc-icon.png" />
     <Content Include="Resources\Volkswagen-emblem-2014-1920x1080.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

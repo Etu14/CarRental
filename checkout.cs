@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace CarRentalSystem
 {
     public partial class checkout : Form
@@ -42,12 +41,28 @@ namespace CarRentalSystem
             // MessageBox.Show(" " + selectedDate1 + ", "+selectedDate3+" ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //con.Close();
 
-            ModalSuc modalForm = new ModalSuc();
-            modalForm.StartPosition = FormStartPosition.CenterScreen;
+
+                if (guna2ComboBox1.SelectedItem != null)
+                {
+                    string selectedPaymentMethod = guna2ComboBox1.SelectedItem.ToString();
+
+                    if (selectedPaymentMethod == "Visa Card")
+                    {
+                    modalError modalForm = new modalError();
+                    modalForm.ShowDialog();
+
+                }
+                    else if (selectedPaymentMethod == "Cash")
+                    {
+
+                    ModalSuc modalForm = new ModalSuc();
+                    modalForm.ShowDialog();
+                }
+                }
             
-            modalForm.ShowDialog();
+
         }
-        
+
 
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -105,6 +120,11 @@ namespace CarRentalSystem
         }
 
         private void guna2Panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
