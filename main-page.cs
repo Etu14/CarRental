@@ -127,5 +127,10 @@ namespace CarRentalSystem
             brandCatalog win2 = new brandCatalog();
             win2.Show();
         }
+
+        private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

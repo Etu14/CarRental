@@ -20,13 +20,12 @@ namespace CarRentalSystem
     public partial class welcomePage : Form
     {
         private System.Windows.Forms.Timer animationTimer;
-        private const int AnimationInterval = 40; // Adjust this value for smoother animation
-        private const int DistancePerTick = 100; // Adjust this value for smoother animation
+        private const int AnimationInterval = 40; 
+        private const int DistancePerTick = 100; 
         public welcomePage()
         {
             InitializeComponent();
 
-            // Initialize the timer
             animationTimer = new System.Windows.Forms.Timer();
             animationTimer.Interval = AnimationInterval;
             animationTimer.Tick += animationTimer_Tick;
@@ -34,7 +33,6 @@ namespace CarRentalSystem
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            // Start the animation timer
             animationTimer.Enabled = true;
             guna2Button1.Enabled = false;
         }
@@ -43,13 +41,10 @@ namespace CarRentalSystem
         {
             guna2Button1.Left += DistancePerTick;
 
-            // Check if the button has moved far enough
             if (guna2Button1.Location.X >= Width)
             {
-                // Stop the timer
                 animationTimer.Enabled = false;
 
-                // Hide Form1
                 Hide();
                 main_page win2 = new main_page();
                 win2.Show();
