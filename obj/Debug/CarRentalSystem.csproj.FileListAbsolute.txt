@@ -212,3 +212,7 @@ C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalS
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.modalError.resources
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.brandCatalog.resources
 C:\Users\perdo\Source\Repos\Etu14\CarRental\CarRentalSystem\obj\Debug\CarRentalSystem.carCatalog.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.brandCatalog.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.carCatalog.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.modalError.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.ModalSuc.resources

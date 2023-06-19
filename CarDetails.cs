@@ -67,5 +67,10 @@ namespace CarRentalSystem
             Date win2 = new Date();
             win2.Show();
         }
+
+        private void guna2PictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
