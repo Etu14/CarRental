@@ -113,5 +113,19 @@ namespace CarRentalSystem
             CarDetails win2 = new CarDetails();
             win2.Show();
         }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            carCatalog win2 = new carCatalog();
+            win2.Show();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            brandCatalog win2 = new brandCatalog();
+            win2.Show();
+        }
     }
 }

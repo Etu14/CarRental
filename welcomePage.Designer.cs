@@ -32,6 +32,7 @@ namespace CarRentalSystem
         private void InitializeComponent()
         {
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -56,7 +57,7 @@ namespace CarRentalSystem
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Image = global::CarRentalSystem.Properties.Resources.sport_car;
             this.guna2Button1.ImageSize = new System.Drawing.Size(200, 200);
-            this.guna2Button1.Location = new System.Drawing.Point(444, 563);
+            this.guna2Button1.Location = new System.Drawing.Point(423, 563);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.Transparent;
             this.guna2Button1.PressedDepth = 0;
@@ -66,6 +67,17 @@ namespace CarRentalSystem
             this.guna2Button1.UseTransparentBackground = true;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(570, 162);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Find and rent car \r\n in easy steps";
+            // 
             // welcomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -73,6 +85,7 @@ namespace CarRentalSystem
             this.BackgroundImage = global::CarRentalSystem.Properties.Resources.mainBg_11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1065, 712);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -81,11 +94,13 @@ namespace CarRentalSystem
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
