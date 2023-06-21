@@ -174,6 +174,12 @@
     <Compile Include="successLogin.Designer.cs">
       <DependentUpon>successLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="userProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userProfile.Designer.cs">
+      <DependentUpon>userProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="welcomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="successLogin.resx">
       <DependentUpon>successLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userProfile.resx">
+      <DependentUpon>userProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomePage.resx">
       <DependentUpon>welcomePage.cs</DependentUpon>
