@@ -16,5 +16,20 @@ namespace CarRentalSystem
         {
             InitializeComponent();
         }
+
+        private void LetsGo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

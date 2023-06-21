@@ -49,7 +49,6 @@
             this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel4.BorderRadius = 30;
             this.guna2Panel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2Panel4.Controls.Add(this.guna2VScrollBar1);
             this.guna2Panel4.Controls.Add(this.guna2TextBox2);
             this.guna2Panel4.CustomizableEdges.BottomRight = false;
             this.guna2Panel4.CustomizableEdges.TopRight = false;
@@ -63,14 +62,15 @@
             // guna2VScrollBar1
             // 
             this.guna2VScrollBar1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2VScrollBar1.BindingContainer = this.guna2Panel4;
             this.guna2VScrollBar1.BorderRadius = 3;
             this.guna2VScrollBar1.FillColor = System.Drawing.Color.Silver;
             this.guna2VScrollBar1.InUpdate = false;
             this.guna2VScrollBar1.LargeChange = 10;
-            this.guna2VScrollBar1.Location = new System.Drawing.Point(979, 81);
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(1014, 163);
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
             this.guna2VScrollBar1.ScrollbarSize = 18;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 455);
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 536);
             this.guna2VScrollBar1.TabIndex = 38;
             this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.Gray;
             this.guna2VScrollBar1.ThumbSize = 5F;
@@ -204,6 +204,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1065, 712);
+            this.Controls.Add(this.guna2VScrollBar1);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel1);
