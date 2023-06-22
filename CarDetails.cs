@@ -20,6 +20,7 @@ namespace CarRentalSystem
         static MySqlConnection con = new MySqlConnection(constr);
 
         private int car_id;
+        public int carId { get; set; }
         public CarDetails(int id)
         {   
             car_id = id;
@@ -30,7 +31,7 @@ namespace CarRentalSystem
 
         private void CarDetails_Load(object sender, EventArgs e)
         {
-            // Perform database query to retrieve values
+
             string query = "SELECT * FROM car_rent.cars WHERE id  = @carId";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.Parameters.AddWithValue("@carId", car_id);
@@ -61,13 +62,13 @@ namespace CarRentalSystem
                 guna2HtmlLabel18.Text = power.ToString();
                 guna2HtmlLabel18.AutoSize = true;
 
-                guna2HtmlLabel10.Text = doors.ToString();
+                guna2HtmlLabel10.Text = doors.ToString()+ " doors";
                 guna2HtmlLabel10.AutoSize = true;
 
                 guna2HtmlLabel9.Text = gearbox;
                 guna2HtmlLabel9.AutoSize = true;
 
-                guna2HtmlLabel7.Text = seats.ToString();
+                guna2HtmlLabel7.Text = seats.ToString()+" seats";
                 guna2HtmlLabel7.AutoSize = true;
 
                 guna2HtmlLabel1.Text = carName;
@@ -84,12 +85,9 @@ namespace CarRentalSystem
 
                 guna2Panel4.Controls.Add(pb);
 
-
-                // Example: Using values in Paint event
                 guna2Panel4.Paint += (paintSender, paintArgs) =>
                 {
-                    // Use carName and carYear in your painting logic
-                    // ...
+
                 };
             }
 
@@ -139,7 +137,7 @@ namespace CarRentalSystem
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Date win2 = new Date();
+            Date win2 = new Date(car_id);
             win2.Show();
         }
 

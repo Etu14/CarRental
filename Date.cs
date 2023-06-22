@@ -15,8 +15,11 @@ namespace CarRentalSystem
 
         private DateTime selectedDate1;
         private DateTime selectedDate3;
-        public Date()
+        private string location;
+        private int carId;
+        public Date(int CarId)
         {
+            this.carId = CarId;
             InitializeComponent();
         }
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
@@ -71,14 +74,20 @@ namespace CarRentalSystem
         private void LetsGo_Click(object sender, EventArgs e)
         {
             this.Hide();
-            checkout win2 = new checkout(selectedDate1, selectedDate3);
+            checkout win2 = new checkout(selectedDate1, selectedDate3, location, carId);
             win2.Show();
             this.Dispose();
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Guna.UI2.WinForms.Guna2ComboBox comboBox = (Guna.UI2.WinForms.Guna2ComboBox)sender;
 
+            if (comboBox.SelectedItem != null)
+            {
+                string selectedValue = comboBox.SelectedItem.ToString();
+                location = selectedValue; // Assign the selected value to the location variable
+            }
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

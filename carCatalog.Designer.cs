@@ -34,13 +34,12 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            this.guna2Panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2VScrollBar1
@@ -145,18 +144,19 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "All Cars";
             // 
-            // guna2CirclePictureBox1
+            // guna2Panel4
             // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Black;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(710, 10);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.guna2CirclePictureBox1.TabIndex = 35;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            this.guna2Panel4.AutoScroll = true;
+            this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2Panel4.CustomizableEdges.BottomRight = false;
+            this.guna2Panel4.CustomizableEdges.TopRight = false;
+            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Panel4.Location = new System.Drawing.Point(32, 163);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(1000, 536);
+            this.guna2Panel4.TabIndex = 33;
+            this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
             // guna2TextBox2
             // 
@@ -174,28 +174,27 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.IconLeft = global::CarRentalSystem.Properties.Resources.searchIcon;
             this.guna2TextBox2.IconLeftOffset = new System.Drawing.Point(10, -1);
-            this.guna2TextBox2.Location = new System.Drawing.Point(260, 25);
+            this.guna2TextBox2.Location = new System.Drawing.Point(292, 112);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "Search vehicle...";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(452, 45);
             this.guna2TextBox2.TabIndex = 31;
+            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
-            // guna2Panel4
+            // guna2CirclePictureBox1
             // 
-            this.guna2Panel4.AutoScroll = true;
-            this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2Panel4.Controls.Add(this.guna2TextBox2);
-            this.guna2Panel4.CustomizableEdges.BottomRight = false;
-            this.guna2Panel4.CustomizableEdges.TopRight = false;
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(32, 163);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1000, 536);
-            this.guna2Panel4.TabIndex = 33;
-            this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(710, 10);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.guna2CirclePictureBox1.TabIndex = 35;
+            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.UseTransparentBackground = true;
             // 
             // carCatalog
             // 
@@ -203,6 +202,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1065, 712);
+            this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2VScrollBar1);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Panel4);
@@ -214,7 +214,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            this.guna2Panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

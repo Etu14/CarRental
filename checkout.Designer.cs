@@ -58,7 +58,6 @@
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
@@ -80,7 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
             this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -126,7 +124,6 @@
             this.guna2Panel4.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel4.Controls.Add(this.guna2Panel2);
-            this.guna2Panel4.Controls.Add(this.guna2PictureBox10);
             this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2Panel4.Location = new System.Drawing.Point(33, 164);
             this.guna2Panel4.Name = "guna2Panel4";
@@ -155,9 +152,9 @@
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(305, 492);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(56, 22);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel10.TabIndex = 44;
-            this.guna2HtmlLabel10.Text = "4 doors";
+            this.guna2HtmlLabel10.Text = null;
             this.guna2HtmlLabel10.Click += new System.EventHandler(this.guna2HtmlLabel10_Click);
             // 
             // guna2PictureBox7
@@ -181,9 +178,9 @@
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(305, 453);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(55, 22);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel9.TabIndex = 42;
-            this.guna2HtmlLabel9.Text = "Manual";
+            this.guna2HtmlLabel9.Text = null;
             this.guna2HtmlLabel9.Click += new System.EventHandler(this.guna2HtmlLabel9_Click);
             // 
             // guna2PictureBox6
@@ -233,9 +230,9 @@
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(108, 452);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(99, 22);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel7.TabIndex = 38;
-            this.guna2HtmlLabel7.Text = "5 passengers";
+            this.guna2HtmlLabel7.Text = null;
             this.guna2HtmlLabel7.Click += new System.EventHandler(this.guna2HtmlLabel7_Click);
             // 
             // guna2HtmlLabel6
@@ -275,9 +272,9 @@
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(66, 337);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(154, 31);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel1.TabIndex = 34;
-            this.guna2HtmlLabel1.Text = "Škoda felícia";
+            this.guna2HtmlLabel1.Text = null;
             this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2Panel2
@@ -336,6 +333,7 @@
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.Size = new System.Drawing.Size(252, 33);
             this.guna2Panel10.TabIndex = 34;
+            this.guna2Panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel10_Paint);
             // 
             // guna2PictureBox13
             // 
@@ -487,21 +485,6 @@
             this.guna2ComboBox1.Tag = "";
             this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // guna2PictureBox10
-            // 
-            this.guna2PictureBox10.BackColor = System.Drawing.Color.LightGray;
-            this.guna2PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.guna2PictureBox10.BorderRadius = 40;
-            this.guna2PictureBox10.FillColor = System.Drawing.Color.Black;
-            this.guna2PictureBox10.Image = global::CarRentalSystem.Properties.Resources.SKODA_FELICIA_1_1;
-            this.guna2PictureBox10.ImageRotate = 0F;
-            this.guna2PictureBox10.Location = new System.Drawing.Point(66, 37);
-            this.guna2PictureBox10.Name = "guna2PictureBox10";
-            this.guna2PictureBox10.Size = new System.Drawing.Size(491, 273);
-            this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox10.TabIndex = 32;
-            this.guna2PictureBox10.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -635,7 +618,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
             this.guna2Panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -648,7 +630,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;

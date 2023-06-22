@@ -5,36 +5,91 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace CarRentalSystem
 {
     public partial class checkout : Form
     {
         private DateTime selectedDate1;
         private DateTime selectedDate3;
-        public checkout(DateTime SelectedDate1, DateTime SelectedDate3)
+        private string location;
+        private int CarId;
+        public checkout(DateTime SelectedDate1, DateTime SelectedDate3, string location, int carId)
         {
             InitializeComponent();
             selectedDate1 = SelectedDate1;
             selectedDate3 = SelectedDate3;
+            this.location = location;
+            this.CarId = carId;
         }
 
         private void checkout_Load(object sender, EventArgs e)
         {
+            string query = "SELECT * FROM car_rent.cars WHERE id  = @carId";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@carId", CarId);
 
+            con.Open();
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+
+                string brand = reader.GetString("brand");
+                string model = reader.GetString("model");
+                string carName = $"{brand} {model}";
+                int top_speed = reader.GetInt32("top_speed");
+                float acceleration = reader.GetFloat("acceleration");
+                int power = reader.GetInt32("power");
+                int doors = reader.GetInt32("doors");
+                string gearbox = reader.GetString("gearbox");
+                int seats = reader.GetInt32("seats");
+
+
+                guna2HtmlLabel10.Text = doors.ToString() + " doors";
+                guna2HtmlLabel10.AutoSize = true;
+
+                guna2HtmlLabel9.Text = gearbox;
+                guna2HtmlLabel9.AutoSize = true;
+
+                guna2HtmlLabel7.Text = seats.ToString() + " seats";
+                guna2HtmlLabel7.AutoSize = true;
+
+                guna2HtmlLabel1.Text = carName;
+                guna2HtmlLabel1.AutoSize = true;
+
+                Guna2PictureBox pb = new Guna2PictureBox();
+                string picturePath = reader["car_img_path"].ToString();
+                string image = Path.Combine("../../", "Resources", picturePath);
+                pb.Image = Image.FromFile(image);
+                pb.SizeMode = PictureBoxSizeMode.Zoom;
+                pb.Size = new Size(450, 300);
+                pb.Location = new Point(50, 40);
+                pb.BackColor = Color.LightGray;
+
+                guna2Panel4.Controls.Add(pb);
+
+
+            }
+            con.Close();
         }
+        public static class SharedData
+        {
+            public static int CarId { get; set; }
+        }
+
         public static int parentX,parenY;
         static string constr = ("Data Source=localhost;port=3306;username=root;password=");
         static MySqlConnection con = new MySqlConnection(constr);
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO car_rent.rent_dates (start, end) VALUES (@startDate, @endDate)";
-            MySqlCommand cmd = new MySqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@startDate", selectedDate1);
-            cmd.Parameters.AddWithValue("@endDate", selectedDate3);
+            string username = "Guest";
+            
 
 
                 if (guna2ComboBox1.SelectedItem != null)
@@ -52,12 +107,20 @@ namespace CarRentalSystem
 
                     ModalSuc modalForm = new ModalSuc();
                     modalForm.ShowDialog();
-                }
-                }
-
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
+                    }
+               
+                string query = "INSERT INTO car_rent.rents (user, car_id, start, end, payment, location) VALUES (@username, @CarId, @startDate, @endDate, @payment, @location)";
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@CarId", CarId);
+                cmd.Parameters.AddWithValue("@startDate", selectedDate1);
+                cmd.Parameters.AddWithValue("@endDate", selectedDate3);
+                cmd.Parameters.AddWithValue("@payment", selectedPaymentMethod);
+                cmd.Parameters.AddWithValue("@location", location);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
         }
 
 
@@ -68,7 +131,7 @@ namespace CarRentalSystem
 
         private void guna2HtmlLabel7_Click(object sender, EventArgs e)
         {
-
+            //seats
         }
 
         private void guna2PictureBox9_Click(object sender, EventArgs e)
@@ -78,7 +141,7 @@ namespace CarRentalSystem
 
         private void guna2HtmlLabel10_Click(object sender, EventArgs e)
         {
-
+            //doors
         }
 
         private void guna2PictureBox7_Click(object sender, EventArgs e)
@@ -88,7 +151,7 @@ namespace CarRentalSystem
 
         private void guna2HtmlLabel9_Click(object sender, EventArgs e)
         {
-
+            //gearbox
         }
 
         private void guna2PictureBox6_Click(object sender, EventArgs e)
@@ -113,7 +176,7 @@ namespace CarRentalSystem
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
-
+            //car name
         }
 
         private void guna2Panel9_Paint(object sender, PaintEventArgs e)
@@ -202,6 +265,27 @@ namespace CarRentalSystem
         private void label12_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Panel10_Paint(object sender, PaintEventArgs e)
+        {
+            if (location != null)
+            {
+                // Create a Label control to display the selected date
+                Label lbllocation = new Label();
+                lbllocation.Text = location.ToString();
+                lbllocation.Font = new Font("Arial", 12, FontStyle.Bold);
+                lbllocation.AutoSize = true;
+                lbllocation.Location = new Point(50, 10); // Adjust the location as needed
+
+                // Add the Label control to the panel
+                guna2Panel10.Controls.Add(lbllocation);
+            }
+        }
+
+        private void guna2PictureBox10_Click(object sender, EventArgs e)
+        {
+            //car image
         }
 
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)

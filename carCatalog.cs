@@ -9,7 +9,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls.WebParts;
 using System.Windows.Forms;
+
 
 namespace CarRentalSystem
 {
@@ -19,6 +21,10 @@ namespace CarRentalSystem
         {
             InitializeComponent();
             LoadCarGallery();
+        }
+        public static class SharedData
+        {
+            public static int CarId { get; set; }
         }
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -127,10 +133,10 @@ namespace CarRentalSystem
                     // Retrieve the id from the PictureBox's unique identifier
                     string pictureBoxId = pictureBox.Name.Replace("pictureBox_", "");
                     int id = int.Parse(pictureBoxId);
+                    SharedData.CarId = id;
 
                     this.Hide();
                     CarDetails win2 = new CarDetails(id);
-                    MessageBox.Show(id.ToString());
                     win2.Show();
                     this.Dispose();
                 };
@@ -164,6 +170,11 @@ namespace CarRentalSystem
                 graphics.DrawImage(image, 0, 0, width, height);
             }
             return resizedImage;
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
