@@ -54,7 +54,7 @@ namespace CarRentalSystem
                 //styles
                 Guna2PictureBox pb = new Guna2PictureBox();
                 pb.Image = img;
-                pb.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb.SizeMode = PictureBoxSizeMode.Zoom;
                 pb.Size = new Size(300, 150);
                 pb.Location = new Point(x, y);
                 pb.BorderStyle = BorderStyle.FixedSingle;
@@ -77,6 +77,30 @@ namespace CarRentalSystem
         private void PictureBox_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            userProfile win2 = new userProfile();
+            win2.Show();
+            this.Dispose();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            main_page win2 = new main_page();
+            win2.Show();
+            this.Dispose();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            main_page win2 = new main_page();
+            win2.Show();
+            this.Dispose();
         }
     }
 

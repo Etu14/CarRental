@@ -40,6 +40,7 @@ namespace CarRentalSystem
             this.Hide();
             registerPage win2 = new registerPage();
             win2.Show();
+            this.Dispose();
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -102,6 +103,7 @@ namespace CarRentalSystem
                             this.Hide();
                             successLogin win2 = new successLogin();
                             win2.Show();
+                            this.Dispose();
                         }
                         else
                         {

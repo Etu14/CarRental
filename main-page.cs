@@ -37,6 +37,7 @@ namespace CarRentalSystem
             this.Hide();
             main_page win2 = new main_page();
             win2.Show();
+            this.Dispose();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -49,6 +50,7 @@ namespace CarRentalSystem
             this.Hide();
             loginPage win2 = new loginPage();
             win2.Show();
+            this.Dispose();
 
         }
 
@@ -112,6 +114,7 @@ namespace CarRentalSystem
             this.Hide();
             CarDetails win2 = new CarDetails();
             win2.Show();
+            this.Dispose();
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -119,6 +122,7 @@ namespace CarRentalSystem
             this.Hide();
             carCatalog win2 = new carCatalog();
             win2.Show();
+            this.Dispose();
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -126,9 +130,23 @@ namespace CarRentalSystem
             this.Hide();
             brandCatalog win2 = new brandCatalog();
             win2.Show();
+            this.Dispose();
         }
 
         private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            userProfile win2 = new userProfile();
+            win2.Show();
+            this.Dispose();
+        }
+
+        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }

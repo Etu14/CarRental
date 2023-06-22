@@ -46,64 +46,121 @@ namespace CarRentalSystem
             
         }
 
-        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
+        private async void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
             MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=; database=car_rent");
             connection.Open();
             string query = "SELECT img_path FROM car_rent.brands";
             MySqlCommand command = new MySqlCommand(query, connection);
             MySqlDataReader reader = command.ExecuteReader();
-            int y = 20;
-            int x = 80;
+
+            int y = 25;
+            int x = 75;
             int column_count = 0;
+            int row_count = 0;
+
             while (reader.Read())
             {
                 column_count++;
-                if (column_count == 5)
-                {
-                    y += 80;
-                    column_count = 0;
+                if (column_count > 6)
+                {   
+                    row_count++;
+                    if(row_count == 4)
+                    {
+                        y += 0;
+                    }
+                    else
+                    {
+                        y += 125;
+                        column_count = 1;
+                    }
                 }
                 if (column_count == 1)
                 {
-                    x = 80;
+                    x = 75;
                 }
                 else
                 {
-                    x += 250;
+                    x += 150;
                 }
                 string picturePath = reader["img_path"].ToString();
-                string image = Path.Combine("../../", "Resources",picturePath);
+                string image = Path.Combine("../../", "Resources", picturePath);
 
-                Image img = Image.FromFile(image);
+                // Check if the image file exists before attempting to load it
+                if (File.Exists(image))
+                {
+                    using (FileStream fs = new FileStream(image, FileMode.Open, FileAccess.Read))
+                    {
+                        // Load the image asynchronously
+                        Image originalImage = await Task.Run(() => Image.FromStream(fs));
 
-                //styles
-                Guna2PictureBox pb = new Guna2PictureBox();
-                pb.Image = img;
-                pb.SizeMode = PictureBoxSizeMode.StretchImage;
-                pb.Size = new Size(200, 100);
-                pb.Location = new Point(x, y);
-                pb.BorderStyle = BorderStyle.FixedSingle;
+                        // Resize the image while maintaining the aspect ratio
+                        Image resizedImage = ResizeImage(originalImage, 125, 125);
 
-                pb.MouseClick += PictureBox_MouseClick;
+                        // Dispose the original image to free up memory
+                        originalImage.Dispose();
 
-                guna2Panel4.Controls.Add(pb);
+                        //styles
+                        Guna2PictureBox pb = new Guna2PictureBox();
+                        pb.Image = resizedImage;
+                        pb.SizeMode = PictureBoxSizeMode.Zoom;
+                        pb.Size = new Size(100, 100);
+                        pb.Location = new Point(x, y);
+                        pb.BorderStyle = BorderStyle.FixedSingle;
 
-                
-                
+                        pb.MouseClick += PictureBox_MouseClick;
+
+                        guna2Panel4.Controls.Add(pb);
+                    }
+                }
             }
+
             reader.Close();
             connection.Close();
         }
+
+        private Image ResizeImage(Image image, int width, int height)
+        {
+            // Calculate the new width and height while maintaining the aspect ratio
+            int newWidth;
+            int newHeight;
+            double aspectRatio = (double)image.Width / image.Height;
+
+            if (aspectRatio > 1)
+            {
+                newWidth = width;
+                newHeight = (int)(width / aspectRatio);
+            }
+            else
+            {
+                newWidth = (int)(height * aspectRatio);
+                newHeight = height;
+            }
+
+            // Create a new bitmap with the resized dimensions
+            Bitmap resizedImage = new Bitmap(newWidth, newHeight);
+
+            // Draw the original image onto the resized bitmap
+            using (Graphics graphics = Graphics.FromImage(resizedImage))
+            {
+                graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+            }
+
+            return resizedImage;
+        }
+
+
+
         private void PictureBox_MouseClick(object sender, MouseEventArgs e)
         {
-            
+
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }
 

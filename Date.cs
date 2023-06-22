@@ -98,6 +98,11 @@ namespace CarRentalSystem
             checkout win2 = new checkout(selectedDate1, selectedDate3);
             win2.Show();
         }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

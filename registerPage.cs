@@ -27,6 +27,7 @@ namespace CarRentalSystem
             this.Hide();
             loginPage win2 = new loginPage();
             win2.Show();
+            this.Dispose();
         }
     }
 }

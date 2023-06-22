@@ -216,6 +216,7 @@
             this.guna2ComboBox1.Size = new System.Drawing.Size(244, 36);
             this.guna2ComboBox1.TabIndex = 33;
             this.guna2ComboBox1.Tag = "";
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label2
             // 

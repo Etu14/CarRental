@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -59,23 +59,6 @@
             this.guna2Panel4.TabIndex = 33;
             this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
-            // guna2VScrollBar1
-            // 
-            this.guna2VScrollBar1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2VScrollBar1.BindingContainer = this.guna2Panel4;
-            this.guna2VScrollBar1.BorderRadius = 3;
-            this.guna2VScrollBar1.FillColor = System.Drawing.Color.Silver;
-            this.guna2VScrollBar1.InUpdate = false;
-            this.guna2VScrollBar1.LargeChange = 10;
-            this.guna2VScrollBar1.Location = new System.Drawing.Point(1014, 163);
-            this.guna2VScrollBar1.Name = "guna2VScrollBar1";
-            this.guna2VScrollBar1.ScrollbarSize = 18;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 536);
-            this.guna2VScrollBar1.TabIndex = 38;
-            this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.guna2VScrollBar1.ThumbSize = 5F;
-            this.guna2VScrollBar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
-            // 
             // guna2TextBox2
             // 
             this.guna2TextBox2.BorderRadius = 20;
@@ -99,6 +82,23 @@
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(452, 45);
             this.guna2TextBox2.TabIndex = 31;
+            // 
+            // guna2VScrollBar1
+            // 
+            this.guna2VScrollBar1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2VScrollBar1.BindingContainer = this.guna2Panel4;
+            this.guna2VScrollBar1.BorderRadius = 3;
+            this.guna2VScrollBar1.FillColor = System.Drawing.Color.Silver;
+            this.guna2VScrollBar1.InUpdate = false;
+            this.guna2VScrollBar1.LargeChange = 10;
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(1014, 163);
+            this.guna2VScrollBar1.Name = "guna2VScrollBar1";
+            this.guna2VScrollBar1.ScrollbarSize = 18;
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 536);
+            this.guna2VScrollBar1.TabIndex = 38;
+            this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.Gray;
+            this.guna2VScrollBar1.ThumbSize = 5F;
+            this.guna2VScrollBar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
             // 
             // guna2Panel1
             // 
@@ -132,6 +132,7 @@
             this.linkLabel3.Text = "Your account";
             this.linkLabel3.UseMnemonic = false;
             this.linkLabel3.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -152,6 +153,7 @@
             this.linkLabel2.Text = "Catalog";
             this.linkLabel2.UseMnemonic = false;
             this.linkLabel2.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -172,6 +174,7 @@
             this.linkLabel1.Text = "Home\r\n";
             this.linkLabel1.UseMnemonic = false;
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
             // 
