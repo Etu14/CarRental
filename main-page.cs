@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -111,7 +112,11 @@ namespace CarRentalSystem
 
         private void guna2PictureBox10_Click(object sender, EventArgs e)
         {
-            
+            int id = 1;
+            this.Hide();
+            CarDetails win2 = new CarDetails(id);
+            win2.Show();
+            this.Dispose();
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -151,6 +156,34 @@ namespace CarRentalSystem
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox11_Click(object sender, EventArgs e)
+        {
+            int id = 2;
+            this.Hide();
+            CarDetails win2 = new CarDetails(id);
+            win2.Show();
+            this.Dispose();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox14_Click(object sender, EventArgs e)
+        {
+            int id = 6;
+            this.Hide();
+            CarDetails win2 = new CarDetails(id);
+            win2.Show();
+            this.Dispose();
         }
     }
 }

@@ -183,6 +183,16 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buggati_chiron {
+            get {
+                object obj = ResourceManager.GetObject("buggati-chiron", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car {
             get {
                 object obj = ResourceManager.GetObject("car", resourceCulture);
@@ -283,6 +293,16 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ford_mustang {
+            get {
+                object obj = ResourceManager.GetObject("ford-mustang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Honda_logo {
             get {
                 object obj = ResourceManager.GetObject("Honda-logo", resourceCulture);
@@ -346,6 +366,16 @@ namespace CarRentalSystem.Properties {
         internal static System.Drawing.Bitmap mainBg_11 {
             get {
                 object obj = ResourceManager.GetObject("mainBg 11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pagani_zonda_r {
+            get {
+                object obj = ResourceManager.GetObject("pagani-zonda-r", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

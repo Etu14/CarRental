@@ -310,6 +310,9 @@
     <None Include="Resources\location-icon.png" />
     <None Include="Resources\error-icon.png" />
     <None Include="Resources\SKODA-FELICIA-1 1.png" />
+    <None Include="Resources\buggati-chiron.png" />
+    <None Include="Resources\pagani-zonda-r.png" />
+    <None Include="Resources\ford-mustang.png" />
     <Content Include="Resources\png-transparent-logo-bmw-car-bmw-m5-motorcycle-bmw-motorrad-symbol-emblem-circle.png" />
     <Content Include="Resources\png-transparent-toyota-logo-toyota-hilux-car-lexus-toyota-86-toyota-logo-emblem-text-trademark.png" />
     <None Include="Resources\png-transparent-Škoda-auto-car-Škoda-octavia-Škoda-favorit-skoda-logo-car-grass1.png" />
