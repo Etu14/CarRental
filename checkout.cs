@@ -15,11 +15,11 @@ namespace CarRentalSystem
     {
         private DateTime selectedDate1;
         private DateTime selectedDate3;
-        public checkout(DateTime startDate, DateTime endDate)
+        public checkout(DateTime SelectedDate1, DateTime SelectedDate3)
         {
             InitializeComponent();
-            selectedDate1 = startDate;
-            selectedDate3 = endDate;
+            selectedDate1 = SelectedDate1;
+            selectedDate3 = SelectedDate3;
         }
 
         private void checkout_Load(object sender, EventArgs e)
@@ -31,15 +31,15 @@ namespace CarRentalSystem
         static MySqlConnection con = new MySqlConnection(constr);
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            // string query = "INSERT INTO car_rent.rent_dates (start, end) VALUES (@startDate, @endDate)";
-            // MySqlCommand cmd = new MySqlCommand(query, con);
-            // cmd.Parameters.AddWithValue("@startDate", selectedDate1);
-            // cmd.Parameters.AddWithValue("@endDate", selectedDate3);
+            string query = "INSERT INTO car_rent.rent_dates (start, end) VALUES (@startDate, @endDate)";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@startDate", selectedDate1);
+            cmd.Parameters.AddWithValue("@endDate", selectedDate3);
 
-            // con.Open();
-            // cmd.ExecuteNonQuery();
-            // MessageBox.Show(" " + selectedDate1 + ", "+selectedDate3+" ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //con.Close();
+            con.Open();
+            cmd.ExecuteNonQuery();
+            MessageBox.Show(" " + selectedDate1 + ", "+selectedDate3+" ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            con.Close();
 
 
                 if (guna2ComboBox1.SelectedItem != null)
@@ -162,6 +162,48 @@ namespace CarRentalSystem
             loginPage win2 = new loginPage();
             win2.Show();
             this.Dispose();
+
+        }
+
+        private void guna2Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel7_Paint(object sender, PaintEventArgs e)
+        {
+            if (selectedDate1 != null)
+            {
+                // Create a Label control to display the selected date
+                Label lblSelectedDate = new Label();
+                lblSelectedDate.Text = selectedDate1.ToString("dd-MM-yyyy") ;
+                lblSelectedDate.Font = new Font("Arial", 12, FontStyle.Bold);
+                lblSelectedDate.AutoSize = true;
+                lblSelectedDate.Location = new Point(50, 10); // Adjust the location as needed
+
+                // Add the Label control to the panel
+                guna2Panel7.Controls.Add(lblSelectedDate);
+            }
+        }
+
+        private void guna2Panel8_Paint(object sender, PaintEventArgs e)
+        {
+            if (selectedDate3 != null)
+            {
+                // Create a Label control to display the selected date
+                Label lblSelectedDate = new Label();
+                lblSelectedDate.Text = selectedDate3.ToString("dd-MM-yyyy");
+                lblSelectedDate.Font = new Font("Arial", 12, FontStyle.Bold);
+                lblSelectedDate.AutoSize = true;
+                lblSelectedDate.Location = new Point(50, 10); // Adjust the location as needed
+
+                // Add the Label control to the panel
+                guna2Panel8.Controls.Add(lblSelectedDate);
+            }
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
 
         }
 

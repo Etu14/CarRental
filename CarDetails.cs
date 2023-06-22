@@ -72,5 +72,10 @@ namespace CarRentalSystem
         {
 
         }
+
+        private void guna2HtmlLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

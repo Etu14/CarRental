@@ -414,6 +414,16 @@ namespace CarRentalSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profilePP {
+            get {
+                object obj = ResourceManager.GetObject("profilePP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rolls_Royce_logo_2048x2048 {
             get {
                 object obj = ResourceManager.GetObject("Rolls-Royce-logo-2048x2048", resourceCulture);

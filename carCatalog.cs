@@ -68,7 +68,7 @@ namespace CarRentalSystem
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
 
-            guna2Panel4.Controls.Clear(); // Clear existing controls
+            guna2Panel4.Controls.Clear(); 
 
             int y = 25;
             int x = 100;
@@ -83,7 +83,7 @@ namespace CarRentalSystem
 
                 Image img = Image.FromFile(image);
                 Image resizedImage = ResizeImage(img, 350, 175);
-                img.Dispose(); // Dispose original image
+                img.Dispose();
 
                 int row_count = 0;
                 columnCount++;

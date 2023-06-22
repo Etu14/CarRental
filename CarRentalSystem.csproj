@@ -322,6 +322,7 @@
     <None Include="Resources\sport-car.png" />
     <None Include="Resources\time-icon.png" />
     <None Include="Resources\suc-icon.png" />
+    <None Include="Resources\profilePP.png" />
     <Content Include="Resources\Volkswagen-emblem-2014-1920x1080.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

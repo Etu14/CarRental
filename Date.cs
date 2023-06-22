@@ -12,6 +12,7 @@ namespace CarRentalSystem
 {
     public partial class Date : Form
     {
+
         private DateTime selectedDate1;
         private DateTime selectedDate3;
         public Date()
@@ -23,35 +24,10 @@ namespace CarRentalSystem
 
         }
 
-
-
-        private void guna2DateTimePicker2_ValueChanged(object sender, EventArgs e)
+        public void guna2DateTimePicker1_ValueChanged_1(object sender, EventArgs e)
         {
-            TimeSpan selectedTime2 = guna2DateTimePicker2.Value.TimeOfDay;
-            TimeSpan selectedTime4 = guna2DateTimePicker4.Value.TimeOfDay;
-
-            if (selectedTime2 >= selectedTime4 || selectedTime2.Add(TimeSpan.FromHours(1)) > selectedTime4)
-            {
-
-                guna2DateTimePicker4.Value = guna2DateTimePicker2.Value.AddHours(1);
-            }
-        }
-
-        private void guna2DateTimePicker4_ValueChanged(object sender, EventArgs e)
-        {
-            TimeSpan selectedTime2 = guna2DateTimePicker2.Value.TimeOfDay;
-            TimeSpan selectedTime4 = guna2DateTimePicker4.Value.TimeOfDay;
-
-            if (selectedTime4 <= selectedTime2 || selectedTime4.Subtract(selectedTime2) < TimeSpan.FromHours(1))
-            {
-
-                guna2DateTimePicker2.Value = guna2DateTimePicker4.Value.AddHours(-1);
-            }
-        }
-        private void guna2DateTimePicker1_ValueChanged_1(object sender, EventArgs e)
-        {
-            DateTime selectedDate1 = guna2DateTimePicker1.Value.Date;
-            DateTime selectedDate3 = guna2DateTimePicker3.Value.Date;
+            selectedDate1 = guna2DateTimePicker1.Value.Date;
+            selectedDate3 = guna2DateTimePicker3.Value.Date;
 
             if (selectedDate1 >= selectedDate3 || selectedDate1.AddDays(1) > selectedDate3)
             {
@@ -62,8 +38,8 @@ namespace CarRentalSystem
 
         private void guna2DateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
-            DateTime selectedDate1 = guna2DateTimePicker1.Value.Date;
-            DateTime selectedDate3 = guna2DateTimePicker3.Value.Date;
+            selectedDate1 = guna2DateTimePicker1.Value.Date;
+            selectedDate3 = guna2DateTimePicker3.Value.Date;
 
             if (selectedDate3 <= selectedDate1 || selectedDate3.Subtract(selectedDate1).Days < 1)
             {
@@ -128,6 +104,26 @@ namespace CarRentalSystem
             carCatalog win2 = new carCatalog();
             win2.Show();
             this.Dispose();
+        }
+
+        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
