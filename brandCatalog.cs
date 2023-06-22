@@ -27,17 +27,26 @@ namespace CarRentalSystem
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            main_page win2 = new main_page();
+            win2.Show();
+            this.Dispose();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            carCatalog win2 = new carCatalog();
+            win2.Show();
+            this.Dispose();
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            loginPage win2 = new loginPage();
+            win2.Show();
+            this.Dispose();
         }
 
         

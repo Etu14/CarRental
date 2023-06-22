@@ -53,7 +53,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(813, 463);
             this.guna2Panel1.TabIndex = 1;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // linkLabel1
             // 
@@ -92,6 +91,7 @@
             this.guna2TextBox3.Size = new System.Drawing.Size(276, 34);
             this.guna2TextBox3.TabIndex = 4;
             this.guna2TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // guna2PictureBox1
             // 
@@ -120,6 +120,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(275, 40);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "REGISTER";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2TextBox2
             // 
@@ -141,6 +142,7 @@
             this.guna2TextBox2.Size = new System.Drawing.Size(276, 34);
             this.guna2TextBox2.TabIndex = 1;
             this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // guna2TextBox1
             // 
@@ -162,6 +164,7 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(276, 34);
             this.guna2TextBox1.TabIndex = 0;
             this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // registerPage
             // 

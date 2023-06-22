@@ -136,7 +136,7 @@ namespace CarRentalSystem
         private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            userProfile win2 = new userProfile();
+            loginPage win2 = new loginPage();
             win2.Show();
             this.Dispose();
         }
@@ -147,6 +147,11 @@ namespace CarRentalSystem
         }
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
 
         }

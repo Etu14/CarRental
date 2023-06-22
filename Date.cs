@@ -97,11 +97,37 @@ namespace CarRentalSystem
             this.Hide();
             checkout win2 = new checkout(selectedDate1, selectedDate3);
             win2.Show();
+            this.Dispose();
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            userProfile win2 = new userProfile();
+            win2.Show();
+            this.Dispose();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            main_page win2 = new main_page();
+            win2.Show();
+            this.Dispose();
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            carCatalog win2 = new carCatalog();
+            win2.Show();
+            this.Dispose();
         }
     }
 }

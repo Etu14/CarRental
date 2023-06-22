@@ -101,7 +101,7 @@ namespace CarRentalSystem
                         if (sdr["user_password"].Equals(guna2TextBox2.Text))
                         {
                             this.Hide();
-                            successLogin win2 = new successLogin();
+                            userProfile win2 = new userProfile();
                             win2.Show();
                             this.Dispose();
                         }
