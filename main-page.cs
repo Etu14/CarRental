@@ -111,10 +111,7 @@ namespace CarRentalSystem
 
         private void guna2PictureBox10_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            CarDetails win2 = new CarDetails();
-            win2.Show();
-            this.Dispose();
+            
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

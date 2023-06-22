@@ -62,22 +62,27 @@ namespace CarRentalSystem
         {
             MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=car_rent");
             connection.Open();
-            string query = "SELECT car_img_path, brand, model FROM car_rent.cars";
+            string query = "SELECT id, car_img_path, brand, model FROM car_rent.cars";
             MySqlCommand command = new MySqlCommand(query, connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
 
+            MySqlDataReader reader = command.ExecuteReader();
+            reader.Read();
+            int id = reader.GetInt32("id");
+            string car_id = id.ToString();
             guna2Panel4.Controls.Clear(); 
 
             int y = 25;
             int x = 100;
             int columnCount = 0;
+            int pictureCount = 0;
 
             foreach (DataRow row in dataTable.Rows)
             {
 
-
+                pictureCount++; 
                 string picturePath = row["car_img_path"].ToString();
                 string image = Path.Combine("../../", "Resources", picturePath);
 
@@ -112,13 +117,22 @@ namespace CarRentalSystem
                 pb.Size = new Size(350, 175);
                 pb.BorderStyle = BorderStyle.FixedSingle;
 
-                pb.Tag = row["brand"].ToString() + " " + row["model"].ToString(); // Store brand and model as tag
+                pb.Tag = row["brand"].ToString() + " " + row["model"].ToString();
+                pb.Name = "pictureBox_" + row["id"].ToString();
 
                 pb.MouseClick += (sender, e) =>
                 {
                     Guna2PictureBox pictureBox = (Guna2PictureBox)sender;
-                    string brandModel = pictureBox.Tag.ToString();
-                    MessageBox.Show("Clicked on: " + brandModel);
+
+                    // Retrieve the id from the PictureBox's unique identifier
+                    string pictureBoxId = pictureBox.Name.Replace("pictureBox_", "");
+                    int id = int.Parse(pictureBoxId);
+
+                    this.Hide();
+                    CarDetails win2 = new CarDetails(id);
+                    MessageBox.Show(id.ToString());
+                    win2.Show();
+                    this.Dispose();
                 };
 
 
@@ -139,6 +153,8 @@ namespace CarRentalSystem
 
             connection.Close();
         }
+
+        
 
         private Image ResizeImage(Image image, int width, int height)
         {

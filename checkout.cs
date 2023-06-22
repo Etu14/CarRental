@@ -36,11 +36,6 @@ namespace CarRentalSystem
             cmd.Parameters.AddWithValue("@startDate", selectedDate1);
             cmd.Parameters.AddWithValue("@endDate", selectedDate3);
 
-            con.Open();
-            cmd.ExecuteNonQuery();
-            MessageBox.Show(" " + selectedDate1 + ", "+selectedDate3+" ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            con.Close();
-
 
                 if (guna2ComboBox1.SelectedItem != null)
                 {
@@ -59,8 +54,10 @@ namespace CarRentalSystem
                     modalForm.ShowDialog();
                 }
                 }
-            
 
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
 
