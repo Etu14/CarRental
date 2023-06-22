@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CarRentalSystem;
 
 namespace CarRentalSystem
 {
@@ -15,6 +16,11 @@ namespace CarRentalSystem
         public emailModal()
         {
             InitializeComponent();
+        }
+
+        private void emailModal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

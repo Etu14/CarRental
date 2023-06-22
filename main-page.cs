@@ -10,6 +10,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CarRentalSystem;
 
 namespace CarRentalSystem
 {
@@ -141,10 +142,22 @@ namespace CarRentalSystem
 
         private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            loginPage win2 = new loginPage();
-            win2.Show();
-            this.Dispose();
+            if(SharedData.username==null)
+            {
+                linkLabel3.Text = "Login";
+                this.Hide();
+                loginPage win2 = new loginPage();
+                win2.Show();
+                this.Dispose();
+            }
+            else
+            {
+                linkLabel3.Text = SharedData.username;
+                this.Hide();
+                userProfile win2 = new userProfile();
+                win2.Show();
+                this.Dispose();
+            }
         }
 
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)

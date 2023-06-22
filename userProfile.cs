@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CarRentalSystem;
 
 namespace CarRentalSystem
 {
@@ -59,6 +60,15 @@ namespace CarRentalSystem
             main_page win2 = new main_page();
             win2.Show();
             this.Dispose();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            main_page win2 = new main_page();
+            win2.Show();
+            this.Dispose();
+            SharedData.username = null;
         }
     }
 }

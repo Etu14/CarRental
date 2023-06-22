@@ -8,8 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using MySql.Data.MySqlClient;
+using CarRentalSystem;
 
 namespace CarRentalSystem
 {
@@ -104,6 +104,7 @@ namespace CarRentalSystem
                             userProfile win2 = new userProfile();
                             win2.Show();
                             this.Dispose();
+                            SharedData.username = guna2TextBox1.Text;
                         }
                         else
                         {

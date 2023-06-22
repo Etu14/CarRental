@@ -217,3 +217,4 @@ C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.carCatalog.resou
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.modalError.resources
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.ModalSuc.resources
 C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.userProfile.resources
+C:\Users\admin\source\repos\CarRental\obj\Debug\CarRentalSystem.emailModal.resources
