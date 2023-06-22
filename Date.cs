@@ -108,9 +108,10 @@ namespace CarRentalSystem
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+        {   
+            string brand = "null";
             this.Hide();
-            carCatalog win2 = new carCatalog();
+            carCatalog win2 = new carCatalog(brand);
             win2.Show();
             this.Dispose();
         }

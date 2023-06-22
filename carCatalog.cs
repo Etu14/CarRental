@@ -16,10 +16,14 @@ using System.Windows.Forms;
 namespace CarRentalSystem
 {
     public partial class carCatalog : Form
-    {
-        public carCatalog()
+    {   
+        private string car_brand;
+        public carCatalog(string brand)
+
         {
+
             InitializeComponent();
+            this.car_brand = brand;
             LoadCarGallery();
         }
         public static class SharedData
@@ -68,7 +72,18 @@ namespace CarRentalSystem
         {
             MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=car_rent");
             connection.Open();
-            string query = "SELECT id, car_img_path, brand, model FROM car_rent.cars";
+            string query;
+            if(car_brand != null)
+            {
+                query = "SELECT id, car_img_path, brand, model FROM car_rent.cars WHERE brand = '"+car_brand+"'";
+
+            }
+            else
+            {
+                query = "SELECT id, car_img_path, brand, model FROM car_rent.cars";
+
+            }
+
             MySqlCommand command = new MySqlCommand(query, connection);
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable dataTable = new DataTable();

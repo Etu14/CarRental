@@ -15,6 +15,7 @@ namespace CarRentalSystem
 {
     public partial class brandCatalog : Form
     {
+        private string brand;
         public brandCatalog()
         {
             InitializeComponent();
@@ -35,8 +36,9 @@ namespace CarRentalSystem
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
             this.Hide();
-            carCatalog win2 = new carCatalog();
+            carCatalog win2 = new carCatalog(brand);
             win2.Show();
             this.Dispose();
         }

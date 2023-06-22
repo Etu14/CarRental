@@ -15,6 +15,7 @@ namespace CarRentalSystem
 {
     public partial class checkout : Form
     {
+        private string brand;
         private DateTime selectedDate1;
         private DateTime selectedDate3;
         private string location;
@@ -210,8 +211,9 @@ namespace CarRentalSystem
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
             this.Hide();
-            carCatalog win2 = new carCatalog();
+            carCatalog win2 = new carCatalog(brand);
             win2.Show();
             this.Dispose();
         }

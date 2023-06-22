@@ -1,10 +1,12 @@
 ﻿using Guna.UI2.WinForms;
+using Org.BouncyCastle.Crypto.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -121,8 +123,10 @@ namespace CarRentalSystem
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
             this.Hide();
-            carCatalog win2 = new carCatalog();
+            string brand = null;
+            carCatalog win2 = new carCatalog(brand);
             win2.Show();
             this.Dispose();
         }
@@ -155,7 +159,11 @@ namespace CarRentalSystem
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
-
+            string brand = "bugatti";
+            this.Hide();
+            carCatalog win2 = new carCatalog(brand);
+            win2.Show();
+            this.Dispose();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -182,6 +190,15 @@ namespace CarRentalSystem
             int id = 6;
             this.Hide();
             CarDetails win2 = new CarDetails(id);
+            win2.Show();
+            this.Dispose();
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+            string brand = "alfa-romeo";
+            this.Hide();
+            carCatalog win2 = new carCatalog(brand);
             win2.Show();
             this.Dispose();
         }
